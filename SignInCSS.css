@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('BackgroundLogin.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: auto; /* Allows scrolling if content overflows */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px; /* Adequate padding for the form content */
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px; /* Fixed width for better readability */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    box-sizing: border-box;
+    max-height: 90vh; /* Ensures form doesn't exceed viewport height */
+    overflow-y: auto; /* Enables vertical scrolling within the form box */
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.75em; /* Adjusted font size for visibility */
+    margin-top: 0;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.25em; /* Adjusted font size */
+    margin: 0 0 20px; /* Space below the subheading */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select, button {
+    width: calc(100% - 22px); /* Adjust width to account for padding and borders */
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    font-size: 0.875em;
+}
+
+.message {
+    color: green;
+    font-size: 1em;
+}
+
+.help-link {
+    position: absolute;
+    bottom: 10px; /* Positioned at the bottom */
+    right: 10px;  /* Positioned at the right */
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.875em;
+}
+
+.help-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-box {
+        padding: 15px;
+        max-width: 100%;
+        margin-top: 10px; /* Ensures form is visible on smaller screens */
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
